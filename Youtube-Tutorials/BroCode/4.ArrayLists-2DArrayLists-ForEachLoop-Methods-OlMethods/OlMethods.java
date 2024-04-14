@@ -16,7 +16,7 @@ public class OlMethods {
         System.out.println("This is overloaded method #2");
         return a + b + c;
     }
-
+    // another type of methods
     static double add(double a, double b) {
         System.out.println("This is overloaded method #3");
         return a + b;
