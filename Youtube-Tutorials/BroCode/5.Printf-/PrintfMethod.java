@@ -8,7 +8,7 @@ public class PrintfMethod {
         char myChar = 'H';
         String myStr = "Hristo";
         int myInt = 14;
-        double myDb = 3.14;
+        double myDb = 314;
 
         // [conversion-characters]
         System.out.printf("%b This is a format boolean \n", myBool);
@@ -19,7 +19,22 @@ public class PrintfMethod {
 
         // [width]
         // Minimum number of characters to be written as output.
-        System.out.printf("Hello %10s end.\n", myStr); // Prints minimum 10 characters for the "name" including the length of the name.
-        System.out.printf("Hello %-10s end.\n", myStr);
+        System.out.printf("Hello %10s end.\n", myStr); // Prints minimum 10 characters for the "name" variable including the length of the name.
+        System.out.printf("Hello %-10s end.\n", myStr); // all of the spaces are coming after the "name" variable.
+
+        // [precision]
+        // Sets number of digits of precision when outputting float-point values
+        System.out.printf("My money %.2f\n", myDb);
+
+        // [flags]
+        // Adds an effect to output based on the flag added to format specifier.
+        // - : left-justify
+        // + : outputs a plus (+) or minus (-) sign for a numeric value
+        // 0 : numeric values are zero-padded
+        // , : comma grouping separator if numbers > 1000 = 1,000 
+
+        System.out.printf("My money %+f\n", myDb); // Outputs +314 and if there is a minus -314.
+        System.out.printf("My money %020f\n", myDb); // Adds a 0 in from of the number
+        System.out.printf("My money %,f\n", myDb); // if the number is 1000 output = 1,000.000000
     }
 }
