@@ -1,5 +1,5 @@
-package AccessModifiers.package1;
-import AccessModifiers.package2.*;
+package package1;
+import package2.*;
 
 public class B {
     // private modifier = Something that is private is only visiible to the class that
