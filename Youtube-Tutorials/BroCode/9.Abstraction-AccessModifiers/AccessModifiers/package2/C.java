@@ -1,5 +1,5 @@
-package AccessModifiers.package2;
-import AccessModifiers.package1.*;
+package package2;
+import package1.*;
 
 public class C {
     String defaultMessage = "This is a default"; // default modifier
