@@ -17,15 +17,12 @@ public class Main {
                 System.out.print((char)data);
                 data = reader.read();
             }
-
             reader.close();
 
-        } catch (FileNotFoundException e) {
-            // TODO: handle exception
+        } catch (FileNotFoundException e) {   
             e.printStackTrace();
 
         } catch (IOException e) {
-            // TODO: handle exception
             e.printStackTrace();
         }
     }
