@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 
 public class Main {
     public static void main(String[] args) throws Exception {
+        // JFrame = A GUI window to add components to.
     /*
         JFrame frame = new JFrame();
         frame.setTitle("JFrame title goes here.."); // Sets title of frame.
