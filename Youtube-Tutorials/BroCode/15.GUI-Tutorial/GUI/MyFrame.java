@@ -15,7 +15,7 @@ public class MyFrame extends JFrame {
 
         this.setVisible(true); // make rame visible.
 
-        ImageIcon image = new ImageIcon("C:/Users/Hristo/Desktop/Java-Tutorials/Youtube-Tutorials/BroCode/GUI/GUI-Tutorial/lib/wolf.png"); // Creates an ImageIcon.
+        ImageIcon image = new ImageIcon("wolf.png"); // Creates an ImageIcon.
         this.setIconImage(image.getImage()); // Change icon frame.
         // this.getContentPane().setBackground(Color.green); // Change color of background.
         // this.getContentPane().setBackground(new Color(0x000000)); // Hexademical colours.
