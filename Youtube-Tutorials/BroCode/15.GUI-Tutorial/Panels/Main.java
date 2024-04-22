@@ -22,7 +22,7 @@ public class Main {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
-        frame.setSize(750, 750);
+        frame.setSize(700, 700);
         frame.setVisible(true);
 
         frame.add(redPanel);
