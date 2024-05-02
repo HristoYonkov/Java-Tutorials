@@ -1,3 +1,4 @@
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class Main {
@@ -11,7 +12,24 @@ public class Main {
         // JOptionPane.showMessageDialog(null, "Some warning message.", "warning Title", JOptionPane.WARNING_MESSAGE);
         // JOptionPane.showMessageDialog(null, "Some error message.", "error Title", JOptionPane.ERROR_MESSAGE);
 
-        int answer = JOptionPane.showConfirmDialog(null, "Are you ok?", "question Title", JOptionPane.YES_NO_CANCEL_OPTION);
-        System.out.println(answer); // Returns -1 for click "x", 0 for "yes", 1 for "no", 2 for "cancel";
+        // int answer = JOptionPane.showConfirmDialog(null, "Are you ok?", "question Title", JOptionPane.YES_NO_CANCEL_OPTION);
+        // System.out.println(answer); // Returns -1 for click "x", 0 for "yes", 1 for "no", 2 for "cancel".
+
+        // String name = JOptionPane.showInputDialog("Wha is your name? :");
+        // System.out.println(name);
+
+        String[] responses = {"You will!", "I dont think so", "Aaaahh.."};
+        ImageIcon icon = new ImageIcon("Flash_B_01.png");
+
+        JOptionPane.showOptionDialog(null,
+         "You will explode!",
+         "Secret Message",
+         JOptionPane.YES_NO_CANCEL_OPTION,
+         JOptionPane.INFORMATION_MESSAGE,
+         icon,
+         responses,
+         0
+        );
+
     }
 }
